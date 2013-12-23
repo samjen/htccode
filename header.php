@@ -21,6 +21,7 @@
 <link href="<?php bloginfo( 'template_url' ); ?>/css/style_menu.css" rel="stylesheet" type="text/css" />
 <script src="<?php bloginfo( 'template_url' ); ?>/js/menu_min_js_1.js" type="text/javascript"></script>
 <script src="<?php bloginfo( 'template_url' ); ?>/js/menu_2.js" type="text/javascript"></script>
+<script src="<?php bloginfo( 'template_url' ); ?>/js/main.js" type="text/javascript"></script>
 <script>
 $(document).ready(function(){$(".megamenu").megamenu();});
 </script>

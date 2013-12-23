@@ -3,84 +3,12 @@
  * Template Name: Home Template
 */
 get_header(); ?>
-
-<div class="slider_box">
-  <div id="da-slider" class="da-slider">
-    <div class="da-slide">
-      <h2>
-        <?php $custom_fields = get_post_custom();
-	$mykey_values = $custom_fields['wpcf-first-banner-title']; foreach ( $mykey_values as $key => $value ) {?>
-        <?php if($value!=''){echo $value;}?>
-        <?php } ?>
-      </h2>
-      <p>
-        <?php $custom_fields = get_post_custom();
-	$mykey_values = $custom_fields['wpcf-first-banner-description']; foreach ( $mykey_values as $key => $value ) {?>
-        <?php if($value!=''){echo $value;}?>
-        <?php } ?>
-      </p>
-      <div class="da-img"><img src="<?php $custom_fields = get_post_custom();
-	$mykey_values = $custom_fields['wpcf-first-banner-image']; foreach ( $mykey_values as $key => $value ) {?>
-      <?php if($value!=''){echo $value;}?>
-      <?php } ?>" alt="image01" /></div>
-    </div>
-    <div class="da-slide">
-      <h2>
-        <?php $custom_fields = get_post_custom();
-	$mykey_values = $custom_fields['wpcf-second-banner-title']; foreach ( $mykey_values as $key => $value ) {?>
-        <?php if($value!=''){echo $value;}?>
-        <?php } ?>
-      </h2>
-      <p>
-        <?php $custom_fields = get_post_custom();
-	$mykey_values = $custom_fields['wpcf-second-banner-description']; foreach ( $mykey_values as $key => $value ) {?>
-        <?php if($value!=''){echo $value;}?>
-        <?php } ?>
-      </p>
-      <div class="da-img"><img src="<?php $custom_fields = get_post_custom();
-	$mykey_values = $custom_fields['wpcf-second-banner-image']; foreach ( $mykey_values as $key => $value ) {?>
-      <?php if($value!=''){echo $value;}?>
-      <?php } ?>" alt="image01" /></div>
-    </div>
-    <div class="da-slide">
-      <h2>
-        <?php $custom_fields = get_post_custom();
-	$mykey_values = $custom_fields['wpcf-third-banner-title']; foreach ( $mykey_values as $key => $value ) {?>
-        <?php if($value!=''){echo $value;}?>
-        <?php } ?>
-      </h2>
-      <p>
-        <?php $custom_fields = get_post_custom();
-	$mykey_values = $custom_fields['wpcf-third-banner-description']; foreach ( $mykey_values as $key => $value ) {?>
-        <?php if($value!=''){echo $value;}?>
-        <?php } ?>
-      </p>
-      <div class="da-img"><img src="<?php $custom_fields = get_post_custom();
-	$mykey_values = $custom_fields['wpcf-third-banner-image']; foreach ( $mykey_values as $key => $value ) {?>
-      <?php if($value!=''){echo $value;}?>
-      <?php } ?>" alt="image01" /></div>
-    </div>
-    <div class="da-slide">
-      <h2>
-        <?php $custom_fields = get_post_custom();
-	$mykey_values = $custom_fields['wpcf-fourth-banner-title']; foreach ( $mykey_values as $key => $value ) {?>
-        <?php if($value!=''){echo $value;}?>
-        <?php } ?>
-      </h2>
-      <p>
-        <?php $custom_fields = get_post_custom();
-	$mykey_values = $custom_fields['wpcf-fourth-banner-description']; foreach ( $mykey_values as $key => $value ) {?>
-        <?php if($value!=''){echo $value;}?>
-        <?php } ?>
-      </p>
-      <div class="da-img"><img src="<?php $custom_fields = get_post_custom();
-	$mykey_values = $custom_fields['wpcf-fourth-banner-image']; foreach ( $mykey_values as $key => $value ) {?>
-      <?php if($value!=''){echo $value;}?>
-      <?php } ?>" alt="image01" /></div>
-    </div>
-    <nav class="da-arrows"> <span class="da-arrows-prev"></span> <span class="da-arrows-next"></span> </nav>
-  </div>
+<div class="sliderWrap cycle-slideshow" data-cycle-timeout="5000" data-cycle-slides="> .slider" data-cycle-pager="> .pager">
+  <div class="slider"><img src="http://webhubsolution.net/projects/htccode/wp-content/uploads/2013/11/baner-1.jpg" alt="" width="1349" height="411" /></div>
+  <div class="slider"><img src="http://webhubsolution.net/projects/htccode/wp-content/uploads/2013/11/baner-2.jpg" alt="" width="1349" height="411" /></div>
+  <div class="pager"></div>
 </div>
+
 <!--slider-->
 <div class="bodycnt">
   <div class="box_1">

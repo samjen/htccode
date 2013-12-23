@@ -2998,3 +2998,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3f3f3', end
 .wpcf7-textarea { height:115px; width:263px; resize:none;}
 .wpcf7-submit { background:#4BC3F2; width:80px; border:thin none; cursor:pointer; font-weight:bold; color:#fff; transition: background-color 0.5s ease 0s;}
 .wpcf7-submit:hover { background:#FE7800;transition: background-color 0.5s ease 0s;}
+
+/*
+## Slider
+*/
+.sliderWrap { position:relative; float:left; width:100%; clear:both;}
+.sliderWrap .slider { display:none;}
+.pager { position:absolute; left:50%; width:100px;  bottom:35px; margin-left:-50px; z-index:150;}
+.pager span { width:17px; height:17px; float:left; background:#fff; margin:0 6px 0 0; border-radius:50%; text-indent:-999px; overflow:hidden; cursor:pointer;}
+.pager span.cycle-pager-active { background:#1d85b3;}
+.sliderWrap img { max-width:100%; height:auto; width:100%;}
