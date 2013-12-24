@@ -20,6 +20,34 @@ Theme Name: HTC Code
 	font-weight: normal;
 	font-style: normal;
 }
+@font-face {
+				font-family: 'Oswald-Bold';
+				src: url('font/oswaldbold.eot');
+				src: url('font/oswaldbold.eot?#iefix') format('embedded-opentype'),
+						 url('font/oswaldbold.woff') format('woff'),
+						 url('font/oswaldbold.ttf') format('truetype'),
+						 url('font/oswaldbold.svg#oswaldbold') format('svg');
+				font-weight: normal;
+				font-style: normal;
+		}
+@font-face {
+	font-family: 'oswald-light';
+	src: url('font/Oswald-Light.eot');
+	src: local('☺'), url('font/Oswald-Light.woff') format('woff'), url('font/Oswald-Light.ttf') format('truetype'), url('font/Oswald-Light.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+    font-family: 'OswaldRegular';
+    src: url('font/oswald-webfont.eot');
+    src: url('font/oswald-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/oswald-webfont.woff') format('woff'),
+         url('font/oswald-webfont.ttf') format('truetype'),
+         url('font/oswald-webfont.svg#OswaldRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
 body {
 	width: 100%;
 	height: auto;
@@ -90,6 +118,7 @@ a {
 	max-width: 960px;
 	height: auto;
 	margin: 0 auto;
+	clear:both;
 }
 .logo {
 	width: 22%;
@@ -215,7 +244,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3f3f3', end
 }
 @media screen and (max-width:890px) {
 .box_1 {
-	width: 97%;
+	width: 96%;
 	margin-left: 2%;
 	height: 330px;
 }
@@ -3002,9 +3031,36 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3f3f3', end
 /*
 ## Slider
 */
-.sliderWrap { position:relative; float:left; width:100%; clear:both;}
-.sliderWrap .slider { display:none;}
+.sliderWrap { position:relative; float:left; width:100%; clear:both; overflow:hidden;}
+.sliderWrap .slider { display:none; width:100%;}
 .pager { position:absolute; left:50%; width:100px;  bottom:35px; margin-left:-50px; z-index:150;}
 .pager span { width:17px; height:17px; float:left; background:#fff; margin:0 6px 0 0; border-radius:50%; text-indent:-999px; overflow:hidden; cursor:pointer;}
 .pager span.cycle-pager-active { background:#1d85b3;}
-.sliderWrap img { max-width:100%; height:auto; width:100%;}
+.sliderWrap img { height:auto; width:100%;}
+.sliderWrap .caption { position:absolute; left:50%; width:630px; left:50%; margin-left:-480px; top:112px; text-transform:uppercase; color:#fff;}
+.sliderWrap .caption strong { font-weight:normal; font-family: 'OswaldRegular'; font-size:40px; line-height:40px;}
+.sliderWrap .caption em, 
+.sliderWrap .caption .size-2 { font-style:normal; font-weight:700; font-family:'Oswald-Bold'; font-size:54px; line-height:54px;}
+.sliderWrap .caption .size-2 { font-size:40px; line-height:70px;}
+.sliderWrap .color-blue { color:#053347;}
+@media screen and (max-width:1023px) { 
+.sliderWrap .caption { top:30%;}
+.sliderWrap .caption strong { font-size:35px; line-height:35px;}
+.sliderWrap .caption em,
+.sliderWrap .caption .size-2 { font-size:48px; line-height:50px;}
+.sliderWrap .caption .size-2 { font-size:35px;  line-height:37px; position:relative; top:10px; display:block;}
+}
+@media screen and (max-width:950px) { 
+.sliderWrap .caption { top:30%; width:500px; left:2%; margin-left:0;}
+.sliderWrap .caption strong { font-size:30px; line-height:30px;}
+.sliderWrap .caption em,
+.sliderWrap .caption .size-2 { font-size:40px; line-height:45px;}
+.sliderWrap .caption .size-2 { font-size:30px;  line-height:30px; }
+}
+@media screen and (max-width:750px) { 
+.sliderWrap .caption { top:30%; width:auto; left:2%; margin-left:0;}
+.sliderWrap .caption strong { font-size:20px; line-height:20px;}
+.sliderWrap .caption em,
+.sliderWrap .caption .size-2 { font-size:20px; line-height:28px;}
+.sliderWrap .caption .size-2 { font-size:20px;  line-height:20px; }
+}

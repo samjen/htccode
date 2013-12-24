@@ -4,8 +4,23 @@
 */
 get_header(); ?>
 <div class="sliderWrap cycle-slideshow" data-cycle-timeout="5000" data-cycle-slides="> .slider" data-cycle-pager="> .pager">
-  <div class="slider"><img src="http://webhubsolution.net/projects/htccode/wp-content/uploads/2013/11/baner-1.jpg" alt="" width="1349" height="411" /></div>
-  <div class="slider"><img src="http://webhubsolution.net/projects/htccode/wp-content/uploads/2013/11/baner-2.jpg" alt="" width="1349" height="411" /></div>
+<?php 
+global $post;
+$custom_fields = get_post_custom($post->ID);
+$slider_image = $custom_fields['wpcf-slider-image'];
+$caption =  $custom_fields['wpcf-slider-caption'];
+$slider_length = 0;
+?>
+<?php foreach ( $slider_image as $key => $value ) { ?>
+<div class="slider">
+  <div class="caption"><?php echo $caption[$slider_length]; ?></div>
+<img src="<?php echo $value; ?>" alt=""  /></div>
+
+<?php
+$slider_length++;
+ } ?>
+  
+  
   <div class="pager"></div>
 </div>
 
